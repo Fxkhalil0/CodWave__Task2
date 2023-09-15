@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 ul {
@@ -240,6 +241,7 @@ a {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    align-items: center;
 }
 
 .post__icons {
@@ -443,25 +445,280 @@ a {
     margin-bottom: 25px;
     align-items: center;
 }
-.my__friend > p{
+
+.my__friend>p {
     background-color: #2502FF;
     border-radius: 50%;
     padding: 0px 8px;
 }
+
 .friend__info>figure>img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.friend__info{
+.friend__info {
     display: flex;
     gap: 10px;
 }
-.state__text > p:last-of-type{
+
+.state__text>p:last-of-type {
     color: #4CD080;
 }
-.state__text >p:first-of-type{
+
+.state__text>p:first-of-type {
     font-weight: 600;
     margin-bottom: 5px;
+}
+
+@media(max-width:1200px) {
+    .left__side h1 {
+        font-size: 32px;
+    }
+
+    .search__input>input {
+        margin-left: 16px;
+    }
+
+    .search__input>i {
+        left: 29px;
+    }
+
+    .nav__icons__img {
+        width: 18%;
+    }
+
+    .left__body {
+        width: 67%;
+    }
+
+    .body__post__actions>p {
+        padding: 3px 25px;
+    }
+
+    .image__name {
+        gap: 5px;
+    }
+
+    .image__name>p {
+        font-size: 13px;
+    }
+
+    .main__account>i {
+        margin-right: 0px;
+    }
+
+    .left__side h2 {
+        font-size: 20px;
+    }
+
+    .right__body h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:992px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .left__side {
+        width: 20%;
+    }
+
+    .right__side {
+        width: 80%;
+    }
+
+    .body__feed {
+        display: block;
+    }
+
+    .left__body {
+        width: 100%;
+    }
+
+    .nav__icons__img {
+        width: 33%;
+    }
+
+    .add__post {
+        width: 100%;
+    }
+
+    .post__content {
+        width: 100%;
+    }
+
+    .right__body {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width:768px) {
+    .left__side h1 {
+        font-size: 25px;
+    }
+
+    .image__name {
+        gap: 3px;
+    }
+
+    .image__name>p {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .main__account>i {
+        padding: 1px;
+    }
+
+    .menu__items li.active {
+        font-size: 14px;
+    }
+
+    .menu__items li {
+        font-size: 14px;
+    }
+
+    .shortcut__text>p:first-of-type {
+        font-size: 14px;
+    }
+
+    .shortcut__text>p:last-of-type {
+        font-size: 11px;
+    }
+
+    .left__side h2 {
+        font-size: 16px;
+    }
+
+    .post__text>img {
+        height: 300px;
+    }
+
+    .body__post__actions>p.active {
+        padding: 5px 25px;
+    }
+
+    .body__post__actions>p {
+        padding: 5px 25px;
+    }
+
+    .nav__icon {
+        margin-right: 22px;
+    }
+
+    .search__input>input {
+        width: 85%;
+    }
+
+    .nav__icon>i {
+        font-size: 18px;
+    }
+
+    .nav__icons__img {
+        width: 24%;
+    }
+
+    .nav__icons__img>img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav__icon>p {
+        top: -3px;
+        left: 10px;
+    }
+
+    .img__input>img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .user>img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .img__input {
+        gap: 8px;
+    }
+
+    .user {
+        gap: 8px;
+    }
+
+}
+
+@media(max-width:567px) {
+    .left__side {
+        width: 30%;
+    }
+
+    .right__side {
+        width: 70%;
+    }
+    .add__post {
+        width: 100%;
+    }
+    .post__content {
+        width: 100%;
+    }
+
+    .post__text>img {
+        height: 195px;
+    }
+
+    .comment__creator {
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .comment__creator>img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .comment__icons {
+        top: 15px;
+        right: 32px;
+        font-size: 12px;
+    }
+
+    .all__comments {
+        font-size: 13px;
+    }
+
+    .all__comments>p:first-of-type i {
+        font-size: 10px;
+    }
+
+    .body__post__actions>p {
+        padding: 5px 25px;
+        margin-bottom: 16px;
+    }
+
+    .body__post__actions {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search__input {
+        width: 64%;
+    }
+
+    .nav__icons__img {
+        width: 37%;
+    }
+
+    .nav__icon {
+        margin-right: 19px;
+    }
+    .right__body {
+        width: 100%;
+    }
 }
